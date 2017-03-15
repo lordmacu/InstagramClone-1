@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_degrade"
+    android:gravity="center_vertical|center_horizontal"
+    tools:context="rodolfoizidoro.instagramclone.activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="@drawable/fundo_caixa_texto"
+        android:hint="Digite seu usuário"
+        android:padding="16dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="Digite sua senha"
+        android:background="@drawable/fundo_caixa_texto"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/etLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btLogar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fundo_botao"
+        android:layout_below="@+id/etSenha"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Logar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btLogar"
+        android:layout_centerHorizontal="true"
+        android:onClick="abrirCadastroUsuario"
+        android:text="Não tem conta? Crie uma!" />
+    </RelativeLayout>
+</RelativeLayout>
