@@ -4,10 +4,13 @@
     android:layout_height="match_parent"
     tools:context="rodolfoizidoro.instagramclone.fragments.UsuariosFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
+    <ListView
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/list_usuarios"
+        android:divider="#F3F3F3"
+        android:dividerHeight="1dp"
+        android:layout_gravity="center_horizontal|top"
+        ></ListView>
 
 </FrameLayout>
